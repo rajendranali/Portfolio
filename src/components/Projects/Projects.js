@@ -1,13 +1,13 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import ProjectCard from './ProjectCards'
+import Particle from '../Particle'
+//import leaf from '../../Assets/Projects/stylecraze.png'
+//import emotion from '../../Assets/Projects/stylecraze.jpeg'
+import editor from '../../Assets/Projects/stylecraze.png'
+import chatify from '../../Assets/Projects/uboric.png'
+//import suicide from '../../Assets/Projects/suicide.png'
+import bitsOfCode from '../../Assets/Projects/nykka.png'
 
 function Projects() {
   return (
@@ -17,17 +17,30 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: 'white' }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="UBORIC"
+              description="An E-Commerce website where users can purchase all varieties of products and users can become a seller.
+            
+              Features:
+              1.Social Sign-in/Sign-up
+              2. Location-based product delivery
+              3. the User authentication
+              4. Authorize Seller.
+              5. Payment gateway.
+              Tech Stack: React.js | CSS 
+              Areas of responsibility:
+              1. Developed the Category page footwear. 
+              2. Integrated The pages with working functionality. 
+              A collaborative project built by a team of 6 executed in 5 days.
+              "
+              link="https://github.com/Saraswati121/Uboric"
             />
           </Col>
 
@@ -35,9 +48,21 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="NYKKA"
+              description="Nykaa is an E-commerce website about Women's Fashion and Style.
+              An E-Commerce website where users can purchase all cosmetics.
+              Features:
+              1.Social Sign-in/Sign-up
+              2. Location-based product delivery
+              3. the User authentication
+              Tech Stack: HTML | CSS | Javascript 
+              Areas of responsibility:
+              1.Built authentication and integrated it with the frontend.
+              2. Developed the Home and Tariff page. 
+              3. Integrated Stripe as a payment gateway. 
+              4. Developed a profile page for users.
+              5. Developed cart page."
+              link="https://github.com/nagesh199/Nykaa-clone"
             />
           </Col>
 
@@ -45,13 +70,24 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="STYLECRAZE"
+              description="STYLECRAZE CLONE 
+              An informative website about women's Style and fashion.
+              Features:
+              1.Social Sign-in/Sign-up.
+              2. Currently verified fashions and information.
+              3. User authentication.
+              4. Shopping information directly.
+              5.Tech Stack: HTML | CSS | Javascript 
+              Areas of responsibility:
+              1. Built authentication and integrated it with the frontend.
+              2. Git-hub Collaboration has been deployed.
+              3. Developed the Home Navbar and Hairstyle page. "
+              link="https://github.com/rajendranali/Stylecraze"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -80,11 +116,11 @@ function Projects() {
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
-  );
+  )
 }
 
-export default Projects;
+export default Projects
